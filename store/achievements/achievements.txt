@@ -1,0 +1,188 @@
+Play Games achievements for Arrow Bloom (31 achievements, 1000 points)
+
+1. First Steps
+   Description: Complete your first level
+   Icon: lv1.png
+   Points: 5
+   Incremental: No · Initial state: Revealed
+
+2. Getting Started
+   Description: Complete 10 levels
+   Icon: lv10.png
+   Points: 10
+   Incremental: No · Initial state: Revealed
+
+3. Arrow Apprentice
+   Description: Complete 25 levels
+   Icon: lv25.png
+   Points: 15
+   Incremental: No · Initial state: Revealed
+
+4. Pathfinder
+   Description: Complete 50 levels
+   Icon: lv50.png
+   Points: 25
+   Incremental: No · Initial state: Revealed
+
+5. Centurion
+   Description: Complete 100 levels
+   Icon: lv100.png
+   Points: 40
+   Incremental: No · Initial state: Revealed
+
+6. Arrow Legend
+   Description: Complete 250 levels
+   Icon: lv250.png
+   Points: 60
+   Incremental: No · Initial state: Revealed
+
+7. Flawless
+   Description: Complete a level without a mistake
+   Icon: pf1.png
+   Points: 10
+   Incremental: No · Initial state: Revealed
+
+8. Sharp Eye
+   Description: Complete 10 levels without a mistake
+   Icon: pf10.png
+   Points: 25
+   Incremental: No · Initial state: Revealed
+
+9. Untouchable
+   Description: Complete 50 levels without a mistake
+   Icon: pf50.png
+   Points: 60
+   Incremental: No · Initial state: Revealed
+
+10. Thousand Arrows
+   Description: Clear 1,000 arrows
+   Icon: ar1k.png
+   Points: 15
+   Incremental: No · Initial state: Revealed
+
+11. Arrow Storm
+   Description: Clear 10,000 arrows
+   Icon: ar10k.png
+   Points: 40
+   Incremental: No · Initial state: Revealed
+
+12. Unstoppable
+   Description: Clear 50,000 arrows
+   Icon: ar50k.png
+   Points: 60
+   Incremental: No · Initial state: Revealed
+
+13. Hard Nut
+   Description: Complete a Hard level
+   Icon: hard.png
+   Points: 10
+   Incremental: No · Initial state: Revealed
+
+14. Expert Mind
+   Description: Complete an Expert level
+   Icon: expert.png
+   Points: 20
+   Incremental: No · Initial state: Revealed
+
+15. Mastermind
+   Description: Complete a Master level
+   Icon: master.png
+   Points: 30
+   Incremental: No · Initial state: Revealed
+
+16. Insanity
+   Description: Complete an Insane level
+   Icon: insane.png
+   Points: 40
+   Incremental: No · Initial state: Revealed
+
+17. Beyond Insane
+   Description: Complete 10 Insane levels
+   Icon: insane10.png
+   Points: 70
+   Incremental: No · Initial state: Revealed
+
+18. Daily Player
+   Description: Solve a daily challenge
+   Icon: d1.png
+   Points: 10
+   Incremental: No · Initial state: Revealed
+
+19. Regular
+   Description: Solve 30 daily challenges
+   Icon: d30.png
+   Points: 50
+   Incremental: No · Initial state: Revealed
+
+20. On a Roll
+   Description: Solve the daily 7 days in a row
+   Icon: st7.png
+   Points: 30
+   Incremental: No · Initial state: Revealed
+
+21. Month Champion
+   Description: Solve every daily of a month
+   Icon: tr1.png
+   Points: 60
+   Incremental: No · Initial state: Revealed
+
+22. New Look
+   Description: Unlock an arrow skin
+   Icon: sk1.png
+   Points: 10
+   Incremental: No · Initial state: Revealed
+
+23. Collector
+   Description: Unlock every arrow skin
+   Icon: sk5.png
+   Points: 40
+   Incremental: No · Initial state: Revealed
+
+24. Green Thumb
+   Description: Collect 5 pictures in your Gallery
+   Icon: g5.png
+   Points: 15
+   Incremental: No · Initial state: Revealed
+
+25. Gardener
+   Description: Collect 10 pictures in your Gallery
+   Icon: g10.png
+   Points: 30
+   Incremental: No · Initial state: Revealed
+
+26. Full Bloom
+   Description: Collect every picture in your Gallery
+   Icon: g20.png
+   Points: 70
+   Incremental: No · Initial state: Revealed
+
+27. Inner Peace
+   Description: Solve 25 Zen boards
+   Icon: zen25.png
+   Points: 20
+   Incremental: No · Initial state: Revealed
+
+28. Quick Draw
+   Description: Clear 100 arrows in one Time Attack
+   Icon: ta100.png
+   Points: 30
+   Incremental: No · Initial state: Revealed
+
+29. Gauntlet Runner
+   Description: Beat a Weekly Gauntlet
+   Icon: gw1.png
+   Points: 30
+   Incremental: No · Initial state: Revealed
+
+30. Iron Will
+   Description: Beat 4 Weekly Gauntlets
+   Icon: gw4.png
+   Points: 60
+   Incremental: No · Initial state: Revealed
+
+31. Helping Hand
+   Description: Use 10 hints
+   Icon: h10.png
+   Points: 10
+   Incremental: No · Initial state: Revealed
+

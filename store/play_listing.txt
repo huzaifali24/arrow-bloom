@@ -1,0 +1,154 @@
+ARROW BLOOM - GOOGLE PLAY LISTING
+=================================
+
+App name (max 30)
+-----------------
+Arrow Bloom: Logic Puzzle
+
+Short description (max 80)
+--------------------------
+Tap arrows off the board in the right order. Calm, clever, seriously tricky.
+
+Full description (max 4000)
+---------------------------
+Every arrow wants out. Only some of them can go.
+
+Arrow Bloom is a clean, relaxing logic puzzle with a sharp twist. Tap an arrow and it slides off the board in the direction it points, but only if its path is clear. Find the right order, clear every arrow and solve the level.
+
+Easy to learn, hard to master. The first boards take seconds. The big ones will make you stop, look twice and plan your way out.
+
+HOW TO PLAY
+• Tap an arrow to send it off the board
+• An arrow can only leave if nothing blocks its path
+• Hitting another arrow costs a heart, so look before you tap
+• Clear the whole board to win
+
+SIX DIFFICULTY LEVELS
+Normal, Medium, Hard, Expert, Master and Insane. Boards grow bigger and more tangled as you go, with hundreds of arrows locked together on the toughest levels. Harder levels pay more coins.
+
+FEATURES
+• Endless levels, every one guaranteed solvable
+• Picture puzzles: boards shaped like animals, objects and icons
+• Gallery: every picture you solve is added to your collection
+• Boards in many shapes: hexagons, crosses, arches, hourglasses, rings and more
+• Daily Challenge: a new puzzle every day, with a calendar, streaks and a monthly trophy
+• Zen mode: no hearts, no timer, just calm endless boards
+• Time Attack: clear as many arrows as you can in 3 minutes
+• Weekly Gauntlet: 7 boards, 3 hearts, one weekly trophy
+• Weekend Tournament: the same 5 boards for everyone, race the clock every Friday to Sunday
+• Daily Missions: 3 new goals every day, with coins and a bonus hint
+• Fog and Mirror levels: special boards with a twist
+• Leaderboards with Google Play Games: fastest Insane clear, best streak, most levels
+• Cloud save: your progress follows your Google account
+• Achievements: more than 30 to unlock as you improve
+• Combo music: fast correct taps play a melody
+• Guide tool: see any arrow's path before you tap (green = free, red = blocked)
+• Hints when you're stuck
+• Zoom in and out, and the camera follows the last arrows
+• Arrow skins: Rainbow, Ribbon, Pixel, Candy and Neon
+• Board themes: Paper, Midnight, Bloom, Wood, Space and Night Garden
+• Daily reminders so you never miss a puzzle
+• Play offline, anytime
+• No sign-up needed
+
+Train your focus, relax your mind and enjoy that moment when the last arrow flies away.
+
+Made by Kodex Solution.
+Questions or feedback: info@kodexsolution.com
+
+
+CATEGORY / CONTACT
+------------------
+App or game:      Game
+Category:         Puzzle
+Tags (pick up to 5): Logic, Brain games, Casual, Offline, Single player
+Email:            info@kodexsolution.com
+Website:          https://kodexsolution.com
+Privacy policy:   https://privacy.kodexsolution.com/arrow-bloom/
+
+
+APP CONTENT ANSWERS
+-------------------
+Privacy policy:         https://privacy.kodexsolution.com/arrow-bloom/
+Ads:                    Yes, my app contains ads
+App access:             All functionality is available without special access
+Target audience:        13-15, 16-17, 18 and over   (do NOT tick under 13)
+  "Could the app unintentionally appeal to children?"  No
+Content rating (IARC):  Category "Game"; answer No to violence, sexual content,
+                        language, controlled substances, gambling, user interaction/
+                        chat, sharing location, digital purchases = YES (Remove Ads).
+                        Expected rating: Everyone / PEGI 3.
+News app:               No
+Government app:         No
+Financial features:     None
+Health:                 None
+Data safety:            see below
+
+
+DATA SAFETY FORM
+----------------
+Does your app collect or share any of the required user data types?   YES
+  (The AdMob SDK collects data; the game itself collects nothing.)
+
+Is all of the user data collected by your app encrypted in transit?    YES
+Do you provide a way for users to request that their data is deleted?  NO
+  (Nothing is stored on our servers; game data is on the device only.)
+
+Data types to tick:
+
+1) Location > Approximate location
+   Collected: Yes   Shared: Yes
+   Processed ephemerally: No
+   Required or optional: Required (collection can't be turned off)
+   Purposes: Advertising or marketing, Fraud prevention / security / compliance
+
+2) App activity > App interactions
+   Collected: Yes   Shared: Yes
+   Processed ephemerally: No
+   Required
+   Purposes: Advertising or marketing, Analytics, Fraud prevention / security / compliance
+
+3) App info and performance > Crash logs
+   Collected: Yes   Shared: No
+   Required
+   Purposes: Analytics
+
+4) App info and performance > Diagnostics
+   Collected: Yes   Shared: Yes
+   Required
+   Purposes: Advertising or marketing, Analytics, Fraud prevention / security / compliance
+
+5) Device or other IDs > Device or other IDs
+   Collected: Yes   Shared: Yes
+   Required
+   Purposes: Advertising or marketing, Analytics, Fraud prevention / security / compliance
+
+Purchase history: do NOT tick (Google Play Billing handles purchases; Google
+says Play Billing data does not need to be declared).
+Everything else (name, email, contacts, photos, messages, health, financial
+info, precise location, web history, files): NOT collected.
+
+
+IN-APP PRODUCT
+--------------
+Product ID:   remove_ads           (must be exactly this)
+Name:         Remove Ads
+Description:  No more ads between levels. Rewarded ads stay optional.
+Type:         One-time (managed product)
+Price:        US$2.99 (or your choice)
+Status:       Active
+
+
+GRAPHICS (in the store folder)
+------------------------------
+App icon 512x512:          store/icon_512.png
+Feature graphic 1024x500:  store/feature_1024x500.png
+Phone screenshots:         store/screenshots/  (taken from the phone)
+
+
+UPLOAD
+------
+App bundle:  build/app/outputs/bundle/release/app-release.aab
+Version:     1.0.0 (version code 1)
+Signing:     use "Play App Signing" (recommended, default). The .aab is signed
+             with the Kodex upload key (android/upload-keystore.jks).
