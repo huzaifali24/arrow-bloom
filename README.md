@@ -69,3 +69,7 @@ privacy/    privacy policy page
 
 Issues and pull requests are welcome. Please run `flutter analyze` and
 `flutter test` before opening a pull request.
+
+## License
+
+[MIT](LICENSE). The code is free to use, change and share.
