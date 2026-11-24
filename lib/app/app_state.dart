@@ -83,6 +83,9 @@ class AppState extends ChangeNotifier {
   /// Zen boards solved, Time Attack best (arrows cleared in 3 minutes) and
   /// the weeks (Monday's date) whose Gauntlet was won.
   int zenBoards = 0;
+
+  /// Fog mode boards solved.
+  int fogBoards = 0;
   int timeAttackBest = 0;
   Set<String> gauntletWeeks = {};
 
@@ -192,6 +195,7 @@ class AppState extends ChangeNotifier {
     bestInsaneMs = p.getInt('bestInsaneMs');
     ownedThemes = {...?p.getStringList('ownedThemes')};
     zenBoards = p.getInt('zenBoards') ?? 0;
+    fogBoards = p.getInt('fogBoards') ?? 0;
     timeAttackBest = p.getInt('timeAttackBest') ?? 0;
     gauntletWeeks = {...?p.getStringList('gauntletWeeks')};
     try {
@@ -287,6 +291,7 @@ class AppState extends ChangeNotifier {
       if (bestInsaneMs != null) p.setInt('bestInsaneMs', bestInsaneMs!);
       p.setStringList('ownedThemes', ownedThemes.toList());
       p.setInt('zenBoards', zenBoards);
+      p.setInt('fogBoards', fogBoards);
       p.setInt('timeAttackBest', timeAttackBest);
       p.setStringList('gauntletWeeks', gauntletWeeks.toList());
       p.setString('tournamentTimes', jsonEncode(tournamentTimes));
@@ -428,6 +433,18 @@ class AppState extends ChangeNotifier {
     return true;
   }
 
+  /// A Fog board solved: harder to read, so it pays more than Zen.
+  int completeFog(int arrows, {required bool perfect}) {
+    fogBoards++;
+    arrowsCleared += arrows;
+    _track(MissionKind.arrows, arrows);
+    final reward = perfect ? 25 : 15;
+    coins += reward;
+    _checkAchievements();
+    _save();
+    return reward;
+  }
+
   /// A Zen board solved: a few coins, no pressure.
   int completeZen(int arrows) {
     zenBoards++;
@@ -502,6 +519,7 @@ class AppState extends ChangeNotifier {
         'bestInsaneMs': bestInsaneMs,
         'ownedThemes': ownedThemes.toList(),
         'zenBoards': zenBoards,
+        'fogBoards': fogBoards,
         'timeAttackBest': timeAttackBest,
         'gauntletWeeks': gauntletWeeks.toList(),
         'tournamentTimes': tournamentTimes,
@@ -570,6 +588,7 @@ class AppState extends ChangeNotifier {
     }
     ownedThemes.addAll([for (final s in c['ownedThemes'] as List? ?? []) '$s']);
     zenBoards = max(zenBoards, i('zenBoards'));
+    fogBoards = max(fogBoards, i('fogBoards'));
     timeAttackBest = max(timeAttackBest, i('timeAttackBest'));
     gauntletWeeks
         .addAll([for (final w in c['gauntletWeeks'] as List? ?? []) '$w']);
@@ -780,6 +799,7 @@ class AppState extends ChangeNotifier {
     garden = {};
     bestInsaneMs = null;
     zenBoards = 0;
+    fogBoards = 0;
     timeAttackBest = 0;
     gauntletWeeks = {};
     tournamentTimes = {};

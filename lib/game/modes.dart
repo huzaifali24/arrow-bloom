@@ -3,7 +3,7 @@ import 'dart:math';
 import '../app/app_state.dart';
 import 'engine.dart';
 
-enum GameMode { level, daily, zen, timeAttack, gauntlet, tournament }
+enum GameMode { level, daily, zen, timeAttack, gauntlet, tournament, fog }
 
 /// One run of an extra mode (Zen, Time Attack, Weekly Gauntlet), carried
 /// from board to board.
@@ -98,6 +98,18 @@ class ModeRun {
         final i = stage.clamp(0, gauntletStages - 1);
         return LevelGenerator.modeBoardAsync(_gauntletTiers[i], s,
             size: _gauntletSize[i], picture: i == 3);
+      case GameMode.fog:
+        // Endless foggy boards, slowly getting tougher.
+        const tiers = [
+          Difficulty.medium,
+          Difficulty.hard,
+          Difficulty.medium,
+          Difficulty.hard,
+          Difficulty.expert,
+        ];
+        return LevelGenerator.modeBoardAsync(
+            tiers[stage % tiers.length], s,
+            size: stage < 2 ? .4 : .5);
       case GameMode.tournament:
         final i = stage.clamp(0, tournamentStages - 1);
         return LevelGenerator.modeBoardAsync(_tournamentTiers[i], s,
@@ -110,6 +122,7 @@ class ModeRun {
 
   String get title => switch (mode) {
         GameMode.zen => 'Zen',
+        GameMode.fog => 'Fog · ${stage + 1}',
         GameMode.timeAttack => 'Time Attack',
         GameMode.gauntlet => 'Gauntlet · ${stage + 1}/$gauntletStages',
         GameMode.tournament => 'Tournament · ${stage + 1}/$tournamentStages',

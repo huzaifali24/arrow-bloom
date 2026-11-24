@@ -37,7 +37,8 @@ FEATURES
 • Weekly Gauntlet: 7 boards, 3 hearts, one weekly trophy
 • Weekend Tournament: the same 5 boards for everyone, race the clock every Friday to Sunday
 • Daily Missions: 3 new goals every day, with coins and a bonus hint
-• Fog and Mirror levels: special boards with a twist
+• Fog mode: endless boards in the dark, only a small light shows the way
+• Mirror levels: the board flips over as you clear it
 • Leaderboards with Google Play Games: fastest Insane clear, best streak, most levels
 • Cloud save: your progress follows your Google account
 • Achievements: more than 30 to unlock as you improve

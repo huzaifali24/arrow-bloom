@@ -111,6 +111,7 @@ class MeScreen extends StatelessWidget {
                     _Stat(Icons.timer_rounded, '${app.timeAttackBest}',
                         'Time Attack best', t),
                     _Stat(Icons.spa_rounded, '${app.zenBoards}', 'Zen boards', t),
+                    _Stat(Icons.cloud_rounded, '${app.fogBoards}', 'Fog boards', t),
                   ]),
                 ),
                 const SizedBox(height: 10),

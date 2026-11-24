@@ -252,4 +252,16 @@ void main() {
     expect(stale.missionProgress, [0, 0, 0]);
     expect(stale.missionBonus, isFalse);
   });
+
+  test('fog mode: coins per board, more for no mistakes, kept in cloud save',
+      () async {
+    final app = await load({'coins': 0});
+    expect(app.completeFog(40, perfect: false), 15);
+    expect(app.completeFog(40, perfect: true), 25);
+    expect(app.fogBoards, 2);
+    expect(app.coins, 40);
+    final copy = await load({});
+    copy.mergeCloud(app.toCloud());
+    expect(copy.fogBoards, 2);
+  });
 }

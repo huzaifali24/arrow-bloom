@@ -691,7 +691,6 @@ class LevelGenerator {
   /// and Mirror (the board flips over as you clear it). Odd levels, so never
   /// a picture level.
   static LevelTwist twistFor(int level) {
-    if (level >= 20 && level % 10 == 7) return LevelTwist.fog;
     if (level >= 30 && level % 10 == 3) return LevelTwist.mirror;
     return LevelTwist.none;
   }

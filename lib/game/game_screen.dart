@@ -206,7 +206,11 @@ class _GameScreenState extends State<_GameView>
 
   /// Fog / Mirror on special main levels.
   late final LevelTwist _twist =
-      _isLevel ? LevelGenerator.twistFor(widget.level) : LevelTwist.none;
+      _mode == GameMode.fog
+          ? LevelTwist.fog
+          : _isLevel
+              ? LevelGenerator.twistFor(widget.level)
+              : LevelTwist.none;
 
   /// Mirror levels: the board flips over at 25 / 50 / 75 %.
   late final AnimationController _flip;
@@ -410,6 +414,8 @@ class _GameScreenState extends State<_GameView>
             tier: _tier.index,
             arrows: session.total),
         GameMode.zen => app.completeZen(session.total),
+        GameMode.fog =>
+          app.completeFog(session.total, perfect: session.mistakes == 0),
         GameMode.gauntlet => _run!.lastStage ? app.completeGauntlet() : 0,
         GameMode.tournament => _finishTournament(),
         GameMode.timeAttack => 0,
@@ -831,6 +837,7 @@ class _GameScreenState extends State<_GameView>
         GameMode.daily => 'Daily Complete!',
         GameMode.level => 'Level Completed!',
         GameMode.zen => 'Calm and clear',
+        GameMode.fog => 'Through the fog!',
         GameMode.gauntlet => _run!.lastStage
             ? 'Gauntlet Complete!'
             : 'Stage ${_run!.stage + 1} cleared',
@@ -842,6 +849,7 @@ class _GameScreenState extends State<_GameView>
         GameMode.daily => 'Done',
         GameMode.level => 'Next Game',
         GameMode.zen => 'Next board',
+        GameMode.fog => 'Next board',
         GameMode.gauntlet => _run!.lastStage ? 'Done' : 'Next stage',
         GameMode.tournament => 'Done',
         GameMode.timeAttack => '',
@@ -877,8 +885,8 @@ class _GameScreenState extends State<_GameView>
           : 'Level ${widget.level}';
 
   String? get _tip {
-    if (_twist == LevelTwist.fog) {
-      return 'Fog level: tap anywhere to light it up. Only lit arrows move.';
+    if (_twist == LevelTwist.fog && (_run?.stage ?? 0) == 0) {
+      return 'Fog: tap anywhere to light it up. Only lit arrows move.';
     }
     if (_twist == LevelTwist.mirror) {
       return 'Mirror level: the board flips over as you clear it.';

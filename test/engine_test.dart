@@ -259,7 +259,10 @@ void main() {
 
   test('fog and mirror levels are odd, special main levels', () {
     expect(LevelGenerator.twistFor(17), LevelTwist.none, reason: 'too early');
-    expect(LevelGenerator.twistFor(27), LevelTwist.fog);
+    for (var l = 1; l <= 300; l++) {
+      expect(LevelGenerator.twistFor(l), isNot(LevelTwist.fog),
+          reason: 'Fog is its own mode now');
+    }
     expect(LevelGenerator.twistFor(33), LevelTwist.mirror);
     for (var l = 1; l <= 200; l++) {
       if (LevelGenerator.twistFor(l) != LevelTwist.none) {

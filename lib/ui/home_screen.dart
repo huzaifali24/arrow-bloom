@@ -209,6 +209,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   const SizedBox(width: 10),
                   Expanded(
                     child: _ModeButton(
+                      icon: Icons.cloud_rounded,
+                      title: 'Fog',
+                      sub: app.fogBoards > 0 ? '${app.fogBoards}' : null,
+                      theme: t,
+                      onTap: () =>
+                          _open(GameScreen.mode(ModeRun(GameMode.fog))),
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: _ModeButton(
                       icon: Icons.task_alt_rounded,
                       title: 'Missions',
                       sub: app.missionsToClaim > 0
